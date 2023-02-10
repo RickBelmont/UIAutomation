@@ -16,8 +16,8 @@ Feature: Test Loggin Book Page functionality
         Then I logged in to bookpage succesfully https://qa-library-dev.herokuapp.com/qa-dashboard
 
         Examples:
-            | usernameBook                | password   |
-            | rickbelmont_222@hotmail.com | RBelmont01 |
+            | usernameBook         | password   |
+            | testmail@hotmail.com | 1234567890 |
 
     Scenario Outline: I enter an invalid username
         When I enter a <usernameBook>
@@ -26,6 +26,6 @@ Feature: Test Loggin Book Page functionality
         Then I receive an error message
 
         Examples:
-            | usernameBook      | password   |
-            | gisel@hotmail.com | RBelmont01 |
+            | usernameBook             | password   |
+            | testfailmail@hotmail.com | 1234567890 |
 

@@ -34,7 +34,6 @@ public class booksSteps extends booksPage {
         booksvar.clickSingInBox();
     }
 
-    // mensaje
     @Then("^I logged in to bookpage succesfully (.+)$")
     public void mainBookPage(String currentUrl) {
         booksvar.getToHomePage(currentUrl);
