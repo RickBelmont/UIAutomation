@@ -21,7 +21,7 @@ public class BasePage {
     static {
         ChromeOptions options = new ChromeOptions();
         // DesiredCapabilities capabilities = new DesiredCapabilities();
-        System.setProperty("webdriver.chromedriver", "C:\\webdriver\\chromedriver.exe");
+        System.setProperty("webdriver.chromedriver", "src\\test\\resources\\chromedriver.exe");
         driver = new ChromeDriver(options);
         // options.addArguments("C:/Users/USER/AppData/Local/Google/Chrome/User Data");
         // capabilities.setCapability(ChromeOptions.CAPABILITY, options);
