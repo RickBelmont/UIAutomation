@@ -1,0 +1,23 @@
+plugins {
+
+    id 'java'
+}
+
+group 'UI Automation'
+version '1.0 SNAPSHOT'
+
+sourceCompatibility = 17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies{
+
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '4.2.6'
+    //testImplementation group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '4.2.6'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.8.0'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.1'
+
+}
